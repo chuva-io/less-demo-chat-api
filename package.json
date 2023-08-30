@@ -1,0 +1,13 @@
+{
+  "name": "chat-api",
+  "version": "1.0.0",
+  "description": "Less Demo: Chat API & Chat Bot.",
+  "scripts": {
+    "deploy": "less-cli deploy"
+  },
+  "author": "Chuva",
+  "license": "MIT",
+  "dependencies": {
+    "@chuva.io/less-cli": "^1.0.0"
+  }
+}
