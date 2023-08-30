@@ -8,6 +8,7 @@
   "author": "Chuva",
   "license": "MIT",
   "dependencies": {
-    "@chuva.io/less-cli": "^1.0.0"
+    "@chuva.io/less-cli": "^1.0.0",
+    "@faker-js/faker": "^8.0.2"
   }
 }
