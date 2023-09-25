@@ -1,14 +1,10 @@
-const { route } = require('@chuva.io/less');
-
 // Import shared `models` module.
 const { Message } = require('models');
 
-// Export an object with a `route` for each HTTP verb.
-// Here we are only exporting a `POST` route with no middleware.
+// Here we are only exporting a `process` function that will contain the logic for handling the specific HTTP method
 module.exports = {
-
     // POST /messages request handler function
-    post: route(async (request, response) => {
+    process: async (request, response) => {
             // Parse the JSON request (this could also be done through middleware).
             const body = JSON.parse(request.body);
 
@@ -29,8 +25,5 @@ module.exports = {
             response.body = JSON.stringify({ message });
             
             return response;
-        },
-        [] // request middleware
-    )
-
+        }
 };
